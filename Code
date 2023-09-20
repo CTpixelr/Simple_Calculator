@@ -1,0 +1,36 @@
+Zahl1 = input("Erste Zahl: ")
+Zeichen = input("Rechenzeichen (+,-,x,:,):")
+Zahl2 = input("Zweite Zahl: ")
+
+if Zeichen == "+":
+    Ergebniss =float(Zahl1) + float(Zahl2)
+    print(Ergebniss)
+if Zeichen == "-":
+    Ergebniss =float(Zahl1) - float(Zahl2)
+    print(Ergebniss)
+elif Zeichen == "x":
+    Ergebniss = float(Zahl1) * float(Zahl2)
+    print(Ergebniss)
+elif Zeichen == ":":
+    Ergebniss = float(Zahl1) / float(Zahl2)
+    print(Ergebniss)
+
+while True :
+    Zeichen2 = input("Weiteres Rechenzeichen: ")
+    if Zeichen2 == "Stop":
+        break
+    Zahl3 = input("Weitere Zahl: ")
+    if Zahl3 == "Stop":
+        break
+    if Zeichen2 == "+":
+        Ergebniss = Ergebniss + float(Zahl3)
+        print(Ergebniss)
+    if Zeichen2 == "-":
+        Ergebniss = Ergebniss - float(Zahl3)
+        print(Ergebniss)
+    if Zeichen2 == "x":
+        Ergebniss = Ergebniss * float(Zahl3)
+        print(Ergebniss)
+    if Zeichen2 == ":":
+        Ergebniss = Ergebniss / float(Zahl3)
+        print(Ergebniss)
